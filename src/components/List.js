@@ -1,6 +1,7 @@
 import './list.css';
 import { useSelector, useDispatch } from 'react-redux';
-const Listtodo = () => {
+const List = () => {
+    const tasks = useSelector( state => state );
     const dispatch = useDispatch();
     const deleteHandler = event => {
         dispatch({type:'delete-task',id:event.target.value});
@@ -13,4 +14,4 @@ const Listtodo = () => {
     )
 }
 
-export default Listtodo;
+export default List;

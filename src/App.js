@@ -1,6 +1,6 @@
 import './App.css';
 import Form from './Components/Form';
-import Listtodo from './Components/Listtodo';
+import List from './Components/List';
 
 
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='App'>
     <Form />
-    <Listtodo />
+    <List />
     </div>
   );
 }
